@@ -1,0 +1,17 @@
+.manager_login_container {
+    width: 94%;
+    margin-left: 2.5%;
+    margin-right: 3.5%;
+    margin-top: 1.5em;
+}
+
+.manager_login_container label {
+    font-size: 1.5em;
+}
+
+input[type=text], input[type=password] {
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}

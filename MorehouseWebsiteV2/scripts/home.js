@@ -49,13 +49,13 @@ $(document).ready(function() {
         var $nav = $('#nav');
         var $logo_num = $('#logo_numbers');
         var $window = $(window);
-        if ($window.scrollTop() > $nav.height()) {
+        if ($window.scrollTop() > ($nav.height() / 2)) {
             $nav.removeClass('transparent_nav');
             $logo_num.addClass('logo_numbers_black');
             $logo_num.removeClass('logo_numbers_white');
 
         }
-        if($window.scrollTop() < $nav.height()) {
+        if($window.scrollTop() < ($nav.height() / 2)) {
             $nav.addClass('transparent_nav');
             $logo_num.addClass('logo_numbers_white');
             $logo_num.removeClass('logo_numbers_black');
@@ -68,7 +68,7 @@ $(document).ready(function() {
         });
     }
 
-    if($(window).width() >= 481 && $(window).width() < 769) {
+    if($(window).width() >= 481 && $(window).width() < 830) {
         $('#mobile_nav a').on('click', function(){
             $('#mobile_nav_links').slideToggle();
         });
