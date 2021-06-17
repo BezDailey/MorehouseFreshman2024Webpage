@@ -1,0 +1,139 @@
+.student_business_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #96929225;
+}
+
+.student_businesses_list {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.student_business_btn {
+    color: white;
+    background-color: #840028;
+    border: none;
+    font-size: 1em;
+    border-radius: 4px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 5em;
+    font-family:  "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: .8em;
+    padding-bottom: .5em;
+}
+
+.student_business_info h3 {
+    color: #840028;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.student_business_info h4 {
+    margin-top: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.student_businesses_list h2 {
+    margin-bottom: 0;
+    font-size: 2.5em;
+}
+
+/* student spotlight css */
+
+.student_spotlight_list h2 {
+    margin-bottom: 0;
+    font-size: 2.5em;
+}
+
+.student_spotlight_list {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/* To change student business list and margins because it breaks eitherwise at this width */
+
+@media only screen and (max-width : 400px) {
+    .student_business_container {
+        flex-direction: column;
+    }
+
+    .student_businesses_list, .student_spotlight_list {
+        padding-left: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.website_developers_container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.website_developers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.website_developers_container h2 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.developer {
+    box-shadow: 0 0 5px #777777;
+    -moz-box-shadow: 0 0 5px #777777;
+    -webkit-box-shadow: 0 0 5px #777777;
+    width: 30%
+}
+
+.developer img {
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: #840028;
+    border-bottom-width: 3px;
+    height: 75%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.developer h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width : 480px) {
+    .website_developers{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .developer {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 769px){
+    .developer {
+        width: 40%;
+    }
+}

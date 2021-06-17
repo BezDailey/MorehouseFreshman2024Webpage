@@ -1,0 +1,432 @@
+/* Css for the Suggested Reading */
+
+.book_slideshow_container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.book_slideshow_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.book_slides_container {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book_controller_container {
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+}
+
+.book_prev, .book_next {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.book_prev:hover, .book_next:hover {
+    color: #b90239;
+}
+
+.book_slide p {
+    margin-bottom: 1.5em;
+}
+
+.book_slide h2 {
+    margin-bottom: 0;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+}
+
+
+.book_slide h3 {
+    margin-top: .5em;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #840028;
+}
+
+/* Css for the Academic Calendar */
+
+.academic_calendar_slideshow_container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.academic_calendar_slideshow_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.event_controller_container {
+    display: flex;
+    font-size: 2em;
+}
+
+.event_prev, .event_next {
+    margin-right: 1em;
+}
+
+.event_prev:hover, .event_next:hover {
+    color: #b90239;
+}
+
+.event_slide h2 {
+    font-size: 1.7em;
+    margin-bottom: .5em;
+    color:#840028;
+}
+
+.event_slide p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.brotherhood_bonding_container {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 20px;
+    padding-top: 1px;
+    background-color: rgba(0, 0, 0, 0.924);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.brotherhood_bonding_info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.brotherhood_bonding_info img {
+    width: 50%;
+}
+
+.brotherhood_bonding_info p, .brotherhood_bonding_info a  {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.brotherhood_bonding_container h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.president_thomas h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width : 760px) {
+    .brotherhood_bonding_info {
+        flex-direction: column;
+    }
+
+    .brotherhood_bonding_info img {
+        width: 100%;
+    }
+
+    .brotherhood_bonding_info p, .brotherhood_bonding_info a {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.home_content_panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.slideshow_panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_panel_flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 59%;
+    margin-right: 1%;
+}
+
+.content_panel {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 50px;
+}
+
+.book_slide p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.president_thomas img {
+    height: 60%;
+    width: 100%;
+}
+
+.president_thomas {
+    width: 38%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0 0 5px #777777;
+    -moz-box-shadow: 0 0 5px #777777;
+    -webkit-box-shadow: 0 0 5px #777777;
+    margin-left: 1em;
+}
+
+.president_thomas p {
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.president_thomas h2 {
+    margin: 0;
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.my_first_year_experience_container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.my_first_year_experience_container h2 {
+    margin: 0;
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_video {
+    margin-right: 1%;
+    width: 99%;
+    height: 60vh;
+}
+
+.right_video {
+    margin-left: 1%;
+    width: 99%;
+    height: 60vh;
+}
+
+.president_thomas .btn {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width : 750px) {
+    .videos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_video, .right_video {
+        margin: 0;
+        width: 100%;
+        margin-top: 25px;
+        height: 30vh;
+    }
+
+    .content_panel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .content_panel_flexbox {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .president_thomas {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 25px;
+    }
+
+    
+    .my_first_year_experience_container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media only screen and (max-width : 480px) { 
+    .my_first_year_experience_container h2 {
+        text-align: center;
+    }
+
+    .brotherhood_bonding_container h2 {
+        text-align: center;
+    }
+
+    .event_slide, .book_slide {
+        text-align: center;
+    }
+}
+
+.book_and_freshman_org_content_panel {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.morehouse_history_books {
+    width: 60%;
+}
+
+.morehouse_history_books h2 {
+    margin: 0;
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.history_books {
+    display: flex;
+    flex-direction: row;
+}
+
+.history_books img {
+    width: 30%;
+    height: 30%;
+}
+
+.history_book_info {
+    width: 62.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.history_book_info {
+    width: 95%;
+    padding-right: 5%
+}
+
+.history_book_info h3 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.history_book_info h4 {
+    margin: 0;
+    color: #840028;
+    font-style: italic;
+    font-size: 1.17em;
+}
+
+.freshman_ori {
+    width: 38%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0 0 5px #777777;
+    -moz-box-shadow: 0 0 5px #777777;
+    -webkit-box-shadow: 0 0 5px #777777;
+    text-align: center;
+}
+
+.freshman_ori p {
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.freshman_ori h3 {
+    margin: 0;
+    color: #840028;
+}
+
+.freshman_ori h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+@media only screen and (max-width : 750px) {
+    .book_and_freshman_org_content_panel {
+        flex-direction: column;
+    }
+
+    .morehouse_history_books {
+        width: 100%;
+        text-align: center;
+    }
+
+    .history_books img {
+        width: 100%;
+        height: auto;
+    }
+
+    .history_books {
+        flex-direction: column;
+    }
+
+    .freshman_ori {
+        width: 100%;
+        margin-top: 25px;
+    }  
+}
+
+@media only screen and (max-width : 480px) {
+
+    .freshman_ori {
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 830px){
+
+    .freshman_ori {
+        padding-bottom: 2em;
+    }
+}
+
+
+.event_controller_container {
+    display: none;
+}
+
+/* CSS for academic calendar to make it responsive and look how we want */
+
+.google_calendar {
+    width: 100%;
+    height: 50vh;
+}
+
+/* Google calendar css for mobile sizing */
+@media only screen and (max-width : 480px) {
+    .google_calendar {
+        height: 30vh;
+    }
+}
