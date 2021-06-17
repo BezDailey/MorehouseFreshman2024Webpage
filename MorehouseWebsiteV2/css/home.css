@@ -138,13 +138,13 @@ Mobile layout styles
     }
 
     #img_div {
-        background-image: url("../images/morehouse23.png");
+        background-image: url("../images/morehouse24.jpg");
         width: 100%;
         height: 60vh;
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
-        background-position: 80% 100%;
+        background-position: 80% 90%
     }
 
     #img_div_words{
@@ -231,7 +231,7 @@ Mobile layout styles
     Tablet layout styles
   ==============================================
 */
-@media only screen and (min-width: 481px) and (max-width: 830px){
+@media only screen and (min-width: 481px) and (max-width: 875px){
     #nav {
         display: none;
     }
@@ -302,7 +302,7 @@ Mobile layout styles
     }
 
     #img_div {
-        background-image: url("../images/morehouse23.png");
+        background-image: url("../images/morehouse24.jpg");
         width: 100%;
         height: 60vh;
         background-repeat: no-repeat;
@@ -392,10 +392,10 @@ Mobile layout styles
 
 /* =============================================
     Desktop layout styles used by  devices
-    769px and larger.
+    876px and larger.
     =============================================
 */
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 876px) {
     #mobile_nav_components {
         display: none;
     }
@@ -475,7 +475,7 @@ Mobile layout styles
     }
     
     #img_div {
-        background-image: url("../images/morehouse23.png");
+        background-image: url("../images/morehouse24.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -568,3 +568,4 @@ Mobile layout styles
     }
 
 }
+

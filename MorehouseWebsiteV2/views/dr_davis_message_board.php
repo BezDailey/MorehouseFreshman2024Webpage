@@ -15,25 +15,32 @@
         <div id="img_div_words">Professor Davis' Message Board</div>
     </div>
     <div id="color_block"></div>
-    <div class="message_board_container">
-        <h2>Message Board</h2>
-        <?php if($messages != null): ?>
-        <?php foreach($messages as $message): ?>
-        <div class="message_container">
-            <div class="message_title">
-                <h3><?php echo($message->subject); ?></h3>
-                <h4>Author: <?php echo($message->author); ?></h4>           
+
+
+    <div class="message_board_content">
+        <img src="../images/drdavisfye.jpeg" class="dr_davis_img" alt="Professor Davis" />
+        <div class="message_board_container">
+            <?php if($messages != null): ?>
+            <?php foreach($messages as $message): ?>
+            <div class="message_container">
+                <div class="message_title">
+                    <h3><?php echo($message->subject); ?></h3>
+                    <h4>Author: <?php echo($message->author); ?></h4>           
+                </div>
+                <p><?php echo($message->text); ?></p>
+                <form method="post" action="../controllers/dr_davis_message_board_controller.php" class="btn_container">
+                    <input type="hidden" name="action" value="show_reply_form">
+                    <input type="hidden" name="message_id" value="<?php echo($message->id); ?>">
+                    <input type="submit" value="Reply" class="btn">
+                </form>
             </div>
-            <p><?php echo($message->text); ?></p>
-            <form method="post" action="../controllers/dr_davis_message_board_controller.php" class="btn_container">
-                <input type="hidden" name="action" value="show_reply_form">
-                <input type="hidden" name="message_id" value="<?php echo($message->id); ?>">
-                <input type="submit" value="Reply" class="btn">
-            </form>
+            <?php endforeach; ?>
+            <?php endif; ?>    
         </div>
-        <?php endforeach; ?>
-        <?php endif; ?>        
     </div>
+
+
+
     <footer>
         <a href="../controllers/managers_area_controller.php">Manager's Area</a>
     </footer>

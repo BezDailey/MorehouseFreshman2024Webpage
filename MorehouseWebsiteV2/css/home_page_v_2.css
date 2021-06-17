@@ -1,0 +1,326 @@
+/*
+ * This file is the second created css page for www.morehousefreshmanclass.net/views/home.php
+ * That page is almost completely unreadable. All new css work for that page created by me will be here.
+ * 
+ * Author: Jabez Dailey
+ * Version: 2.0
+ */   
+
+ 
+/* =====================================
+Website styles
+=======================================*/
+
+/* Header Image div */
+#img_div
+{
+    background-image: url("../images/headerImg.jpg");
+}
+
+.bhb_img
+{
+    height: 50%;
+}
+
+/* =====================================
+Mobile layout styles
+=======================================*/
+@media only screen and (max-width : 480px) 
+{
+
+    /* Side Info Container CSS for mobile */
+    .side_info_container
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    /* President Thomas CSS for mobile */
+    .president_thomas 
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .president_thomas p 
+    {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: center;
+    }
+
+    .president_thomas .btn
+    {
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    /* Freshman Orientation CSS for mobile */
+    .freshman_ori
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .freshman_ori h4
+    {
+        width: 96%;
+        margin: 0;
+        padding: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: .3em;
+        margin-bottom: 25px;
+    }
+
+    /* Morehouse Books and Morehouse History Photos Content Panel Css for mobile */
+    .book_and_freshman_org_content_panel
+    {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 15px;        
+    }
+
+    /* Morehouse Books CSS for mobile */
+    .history_book_info
+    {
+        margin-top: 1em;
+    }
+
+    /* Morehouse history photos CSS for mobile */
+    .morehouse_historical_imgs img
+    {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+/*=============================================
+    Tablet layout styles
+  ==============================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 875px)
+{
+    /* content panel flexbox css for desktop*/
+    .content_panel {
+        flex-direction: row;
+    }
+
+    /* content panel (Academic Calendar, Suggest Reading) css for tablet*/
+    .content_panel_flexbox {
+        width: 63%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* side content panel (Our president, freshman orientation) css for tablet */
+    .side_info_container {
+        width: 35%;
+    }
+
+    /* President Thomas CSS for tablet */
+    .president_thomas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* President Thomas Text CSS for tablet*/
+    .president_thomas p {
+        width:95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: center;
+    }
+
+    /* President Thomas Btn CSS for tablet */
+    .president_thomas .btn {
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* Freshman Orientation CSS for tablet */
+    .freshman_ori {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-top: 25px;
+    }
+
+    /* Morehouse History Books Content Panel CSS for tablet */
+    .book_and_freshman_org_content_panel {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* The layout for the history books and historical images section for tablet*/
+    .morehouse_history_books {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* the layout for the history books section for tablet */
+    .history_books {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* sizining the history books photo */
+    .history_books img {
+        width: 95%;
+        height: auto;
+        margin-right: 5%;
+    }
+
+    /* The layout for the history books and historical images section for tablet */
+    .morehouse_historical_imgs {
+        width: 70%;
+    }
+
+    /* Morehouse history books css for tablet */
+    .history_books_img {
+        margin-bottom: 1em;
+    }  
+
+
+    /* Morehouse history photos CSS for tablet */
+    .morehouse_historical_imgs img
+    {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+/* =============================================
+    Desktop layout styles used by  devices
+    830px and larger.
+    =============================================
+*/
+@media only screen and (min-width: 876px) 
+{
+    /* content panel (Academic Calendar, Suggest Reading) css for desktop*/
+    .content_panel_flexbox {
+        width: 63%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* side content panel (Our president, freshman orientation) css for desktop */
+    .side_info_container {
+        width: 35%;
+    }
+
+    /* President Thomas CSS for desktop */
+    .president_thomas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* President Thomas Text CSS for desktop*/
+    .president_thomas p {
+        width:95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: center;
+    }
+
+    /* President Thomas Btn CSS for desktop */
+    .president_thomas .btn {
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* Freshman Orientation CSS for desktop */
+    .freshman_ori {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-top: 25px;
+    }
+
+    /* Morehouse History Books Content Panel CSS for desktop */
+    .book_and_freshman_org_content_panel {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* The layout for the history books and historical images section for desktop*/
+    .morehouse_history_books {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* the layout for the history books section for desktop */
+    .history_books {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* the layout for the history books section for desktop */
+    .history_books {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* sizining the history books photo for desktop */
+    .history_books img {
+        width: 95%;
+        height: auto;
+        margin-right: 5%;
+    }
+
+    /* The layout for the history books and historical images section for desktop */
+    .morehouse_historical_imgs {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* morehouse historical images sizing for desktop */
+    .morehouse_historical_imgs img {
+        padding-top: 15%;
+        width: 49%;
+        height: 50%;
+    }
+
+    /* Morehouse history books css for tablet */
+    .history_books_img {
+        margin-bottom: 1em;
+    }  
+
+}

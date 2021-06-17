@@ -43,6 +43,21 @@
                 <h4>The café closes at 11 P.M. during the week and 7 P.M. during the weekend</h4>
             </div>
         </div>
+  
+    <div class="first_year_pic_container">
+        <div class="first_year_pic">
+            <div class="first_year_right">
+                <img class="first_year_right" src="../images/brothersinarms.jpeg"/>
+            </div>
+            <div class="first_year_left">
+                <img class="first_year_left" src="../images/brotherslookingfly.jpeg"/>
+            </div>
+        </div>
+    </div>
+
+
+
+
         <div class="resource_list">
             <h2>Resource Links</h2>
             <div class="resource_container">

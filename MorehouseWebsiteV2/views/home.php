@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/home.css" />
     <link rel="stylesheet" type="text/css" href="../css/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home_page_v_2.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Freshman Class of 2024</title>
 </head>
@@ -26,7 +26,7 @@
     <div class="brotherhood_bonding_container">
         <h2>Brotherhood Bonding</h2>
         <div class="brotherhood_bonding_info">
-            <img src="../images/brotherhoodBonding.png" alt="Brotherhood Bonding Image">
+            <img src="../images/brotherhoodBonding2.png" class="bhb_img" alt="Brotherhood Bonding Image">
             <div class="brotherhood_bonding_text">
                 <p>Brotherhood bonding is a platform where students have the opportunity to connect in a casual, virtual settting. These sessions occur weekly at 6pm EST on Monday and Wednesday. Join us!</p>
             </div>
@@ -34,20 +34,19 @@
     </div>
     <div class="content_panel">
         <div class="content_panel_flexbox">
-            <div class="academic_calendar">
-                <h1>Academic Calendar</h1>
-                <div class="event_controller_container">
-                    <a class="event_prev" onclick="">❮</a>
-                    <a class="event_next" onclick="">❯</a>
-                    <div class="event_slide_number">1/1</div>
-                </div>
-                <?php foreach($events as $event): ?>
-                <div class="event_slide">
-                    <p class="event_id" hidden><?php echo($event->id); ?></p>
-                    <h2><?php echo($event->date); ?></h2>
-                    <p><?php echo($event->info); ?></p>
-                </div>
-                <?php endforeach; ?>
+        <div class="academic_calendar">
+            <h1>Academic Calendar</h1>
+            <iframe class="google_calendar" src="https://calendar.google.com/calendar/embed?height=260&amp;wkst=1&amp;bgcolor=%23840028&amp;ctz=America%2FNew_York&amp;src=c2ZzZnJzd2ZAZ21haWwuY29t&amp;src=NmJmamlobWJrdTE4dWhic2ZsNWQzM2ozNjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;showTitle=0&amp;title=Morehouse%20" style="border:solid 2px #777" width="430" height="260" frameborder="0" scrolling="no"></iframe>
+            <div class="event_controller_container">
+                <a class="event_prev" onclick="">❮</a>
+                <a class="event_next" onclick="">❯</a>
+                <div class="event_slide_number">1/1</div>
+            </div>    
+            <div class="event_slide">
+                <p class="event_id" hidden></p>
+                <h2></h2>
+                <p></p>
+            </div>
             </div>
             <div class="suggested_reading">
                 <h1>Suggested Reading</h1>
@@ -94,11 +93,18 @@
                 </div>
             </div>
         </div>
-        <div class="president_thomas">
-            <h2>Our President</h2>
-            <img src="../images/presidentThomas.png" alt=" President Thomas" />
-            <p>Dr. David A. Thomas became the 12th president of Morehouse College upon his installation in January 2018. The Board of Trustees selected Thomas for many reasons, including his visionary leadership as an Ivy League business school administrator and a proven track record as a fundraiser.</p>
-            <a class="btn" href="https://www.morehouse.edu/about/leadership/">Learn More</a>
+        <div class="side_info_container">
+            <div class="president_thomas">
+                <h2>Our President</h2>
+                <img src="../images/presidentThomas.png" alt=" President Thomas" />
+                <p>Dr. David A. Thomas became the 12th president of Morehouse College upon his installation in January 2018. The Board of Trustees selected Thomas for many reasons, including his visionary leadership as an Ivy League business school administrator and a proven track record as a fundraiser.</p>
+                <a class="btn" href="https://www.morehouse.edu/about/leadership/">Learn More</a>
+            </div>
+            <div class="freshman_ori">
+                <h2>Freshman Orientation</h2>
+                <h3>Tuesdays 11:00am - 11:50am</h3>
+                <h4>The final day of freshman orientation is April 26</h4> 
+            </div>
         </div>
     </div>
     <div class="book_and_freshman_org_content_panel">
@@ -118,11 +124,9 @@
                 </div>
             </div>
         </div>
-        <div class="freshman_ori">
-            <h2>Freshman Orientation</h2>
-            <h3>Tuesdays 11:00am - 11:50am</h3>
-            <p>Zoom link below</p>
-            <a class="link" href="https://morehouse.zoom.us/j/4152159280">https://morehouse.zoom.us/j/4152159280</a>
+        <div class="morehouse_historical_imgs">
+            <img src="../images/historyImg1.jpeg" alt="" />
+            <img src="../images/historyImg2.jpeg" alt="" />
         </div>
     </div>
     <footer>
@@ -130,5 +134,9 @@
     </footer>
     <script src="../scripts/home.js"></script>
     <script src="../scripts/home_page.js"></script>
+
+
+
+    
 </body>
 </html>

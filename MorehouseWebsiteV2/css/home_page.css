@@ -182,6 +182,7 @@
     box-shadow: 0 0 5px #777777;
     -moz-box-shadow: 0 0 5px #777777;
     -webkit-box-shadow: 0 0 5px #777777;
+    margin-left: 1em;
 }
 
 .president_thomas p {
@@ -269,6 +270,7 @@
         margin-top: 25px;
     }
 
+    
     .my_first_year_experience_container {
         display: flex;
         flex-direction: column;
@@ -393,5 +395,38 @@
     .freshman_ori {
         width: 100%;
         margin-top: 25px;
+    }  
+}
+
+@media only screen and (max-width : 480px) {
+
+    .freshman_ori {
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 830px){
+
+    .freshman_ori {
+        padding-bottom: 2em;
+    }
+}
+
+
+.event_controller_container {
+    display: none;
+}
+
+/* CSS for academic calendar to make it responsive and look how we want */
+
+.google_calendar {
+    width: 100%;
+    height: 50vh;
+}
+
+/* Google calendar css for mobile sizing */
+@media only screen and (max-width : 480px) {
+    .google_calendar {
+        height: 30vh;
     }
 }

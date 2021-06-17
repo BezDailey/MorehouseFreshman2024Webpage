@@ -66,9 +66,8 @@
     margin-right: 2.5%;
 }
 
-
-
 /* To change student business list and margins because it breaks eitherwise at this width */
+
 @media only screen and (max-width : 400px) {
     .student_business_container {
         flex-direction: column;

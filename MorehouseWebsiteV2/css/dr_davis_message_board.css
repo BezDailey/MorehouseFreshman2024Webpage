@@ -51,3 +51,117 @@
     margin: 0;
     width: 3em;
 }
+
+/*
+ * This file is the css page for views/dr_davis_message_board.php
+ * 
+ * Author: Jabez Dailey
+ * Version: 2.0
+ */   
+
+ 
+/* =====================================
+    Website styles
+    =======================================*/
+
+        .message_board_container {
+            display: flex;
+        }
+
+        .dr_davis_img {
+            width: 50%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+/* =====================================
+    Mobile layout styles
+    =======================================*/
+@media only screen and (max-width : 480px) 
+{
+    .message_board_container {
+        flex-direction: column;
+    }
+    
+    .dr_davis_img {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 2em;
+        margin-bottom: 20px;
+    }
+}
+
+/*=============================================
+    Tablet layout styles
+  ==============================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 875px)
+{
+    .message_board_content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-top: 2em;
+    }
+
+    .dr_davis_img {
+        width: 30%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        box-shadow: 0 0 10px #777777;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+    }
+
+    .message_board_container {
+        width: 68%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
+}
+
+/* =============================================
+    Desktop layout styles used by  devices
+    830px and larger.
+    =============================================
+*/
+@media only screen and (min-width: 876px) 
+{
+    .message_board_content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-top: 2em;
+    }
+
+    .dr_davis_img {
+        width: 30%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        box-shadow: 0 0 10px #777777;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+    }
+
+    .message_board_container {
+        width: 68%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
+}

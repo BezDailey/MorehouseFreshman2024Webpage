@@ -15,8 +15,66 @@ h2 {
     justify-content: space-between;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-top-color: #96929225;
     border-bottom-color: #96929225;
 }
+
+
+.first_year_pic_container {
+    width: 100%;
+    border-bottom-width: 500em;
+    border-top-width: 500em;
+    border-top-color: #96929225;
+    border-bottom-color: #96929225;
+    margin-top: 6.35em;
+}
+
+.first_year_pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom-width: 500em;
+    
+    border-top-width: 500em;
+    border-top-color: #96929225;
+    border-bottom-color: #96929225;
+}
+
+
+.first_year_right img {
+    width: 100%;
+    padding-right: 5% ;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: black;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    height: 80%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.first_year_left img {
+    width: 100%;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: black;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    height: 80%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
 
 .resource_btn {
     color: white;
